@@ -23,10 +23,9 @@
             <div id="links">
                 <a href="index.html" id="l">home</a>
                 <a href="about.html" id="l">about</a>
-                <a href="#loginpage" id="l2">log in</a>
+                <a href="#loginpage" id="l2" onclick="openForm()">log in</a>
             </div>
         </div>
-        <!--<img src="assets/about-img1.png" id="im1" width="600px">-->
         <div class="main-container-about">
             <div id="head">elysian is your own virtual bookshelf!</div>
             <div id="sub">our mission is to transform the way you interact with your books, offering a seamless and immersive experience for all book lovers.</div>
@@ -36,8 +35,44 @@
             <div id="sub3">we wanted to replicate that feeling of joy and discovery in a virtual environment and create a comprehensive platform that combined the best aspects of physical bookshelves with the convenience of modern technology.</div>
         </div>
         <div class="features">
-
+            
+        </div>
+        <div id="loginPage">
+            <form action="/action_page.php">
+                <div id="log">Log In</div>
+                <div id="signupp">Don't have an account? <button type="button" id="sign2" onclick="openForm2()">sign up</button></div><br>
+                <div id="userr">Username</div>
+                <input type="text" placeholder="Enter username"><br>
+                <div id="pwd">Password</div>
+                <input type="password" placeholder="Enter password"><br>
+                <button type="submit" id="login1">l o g&emsp;i n</button><br>
+                <button type="button" id="close" onclick="closeForm()">close</button>
+            </form>
+        </div>
+        <div id="signupPage">
+            <form action="/action_page.php">
+                <div id="reg">Register</div>
+                <div class="firstname">
+                    <div id="fn">First name*</div>
+                <input type="text" placeholder="First name" id="infn">
+                </div>
+                <div class="lastname">
+                    <div id="ln">Last name</div>
+                <input type="text" placeholder="Last name" id="inln">
+                </div>
+                <div id="mail">Email ID*</div>
+                <input type="text" placeholder="Enter a valid email id"><br>
+                <div id="age">Birthday</div>
+                <input type="date"><br>
+                <div id="pwd2">Password*</div>
+                <input type="password" placeholder="Enter password"><br>
+                <div id="confirmpwd">Confirm Password*</div>
+                <input type="password" placeholder="Enter password"><br>
+                <button type="submit" id="register">r e g i s t e r</button><br>
+                <button type="button" id="close" onclick="closeForm2()">close</button>
+            </form>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
