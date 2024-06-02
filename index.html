@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,14 +23,50 @@
             <div id="links">
                 <a href="index.html" id="l">home</a>
                 <a href="about.html" id="l">about</a>
-                <a href="#loginpage" id="l2">log in</a>
+                <a href="#loginpage" id="l2" onclick="openForm()">log in</a>
             </div>
         </div>
         <div class="main-container">
             <div class="heading">welcome to elysian.</div>
             <div class="subtitle">your own virtual bookshelf and reading space</div>
-            <div class="b1"><a href="#loginpage" id="sign">get started</a></div>
+            <div class="b1"><a href="#loginpage" id="sign" onclick="openForm()">get started</a></div>
         </div>
     </div>
+    <div id="loginPage">
+        <form action="/action_page.php">
+            <div id="log">Log In</div>
+            <div id="signupp">Don't have an account? <button type="button" id="sign2" onclick="openForm2()">sign up</button></div><br>
+            <div id="userr">Username</div>
+            <input type="text" placeholder="Enter username"><br>
+            <div id="pwd">Password</div>
+            <input type="password" placeholder="Enter password"><br>
+            <button type="submit" id="login1">l o g&emsp;i n</button><br>
+            <button type="button" id="close" onclick="closeForm()">close</button>
+        </form>
+    </div>
+    <div id="signupPage">
+        <form action="/action_page.php">
+            <div id="reg">Register</div>
+            <div class="firstname">
+                <div id="fn">First name*</div>
+            <input type="text" placeholder="First name" id="infn">
+            </div>
+            <div class="lastname">
+                <div id="ln">Last name</div>
+            <input type="text" placeholder="Last name" id="inln">
+            </div>
+            <div id="mail">Email ID*</div>
+            <input type="text" placeholder="Enter a valid email id"><br>
+            <div id="age">Birthday</div>
+            <input type="date"><br>
+            <div id="pwd2">Password*</div>
+            <input type="password" placeholder="Enter password"><br>
+            <div id="confirmpwd">Confirm Password*</div>
+            <input type="password" placeholder="Enter password"><br>
+            <button type="submit" id="register">r e g i s t e r</button><br>
+            <button type="button" id="close" onclick="closeForm2()">close</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
