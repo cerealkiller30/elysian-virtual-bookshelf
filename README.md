@@ -11,7 +11,6 @@
 <h2>Built with</h2>
 <p>This project was built with the following technologies:</p>
 <ul>
-  <li>Tailwind CSS</li>
   <li>ReactJS</li>
   <li>WEB3</li>
   <li>MongoDB</li>
